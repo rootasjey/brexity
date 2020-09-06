@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 
-import { Scene as PreloaderScene } from './scenes/preload';
+//import { Scene as PreloaderScene } from './scenes/preload';
 import { Scene as MainScene } from './scenes/main';
 
 const config = {
@@ -18,7 +18,7 @@ const config = {
     mode: Phaser.Scale.ENVELOP,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  scene: [PreloaderScene, MainScene],
+  scene: [/*PreloaderScene,*/ MainScene],
 };
 
 window.addEventListener('load', () => new Phaser.Game(config));
